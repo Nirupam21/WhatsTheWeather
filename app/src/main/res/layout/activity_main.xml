@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/query"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="City"
+        android:textColorHint="#ffffff"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@id/query2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/query"
+        app:layout_constraintBottom_toTopOf="@id/query2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="OR"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/query2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="Zip, Country code"
+        android:textColorHint="#ffffff"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@id/querybtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/query"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/querybtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="whatstheweather"
+        android:text="Check"
+        app:layout_constraintBottom_toTopOf="@id/name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/query"
+        android:textColor="#ffffff"
+        android:backgroundTint="#4169e1"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/querybtn"
+        app:layout_constraintBottom_toTopOf="@id/result"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/descr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintBottom_toTopOf="@id/temp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descr"
+        app:layout_constraintBottom_toTopOf="@id/result"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/temp"
+        android:textSize="20dp"
+        android:textColor="#ffffff"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

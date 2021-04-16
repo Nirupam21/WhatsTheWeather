@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WhatsTheWeather</string>
+    <string name="city_state_code_country_code">City, State code, Country code</string>
+    <string name="search">Search</string>
+</resources>
