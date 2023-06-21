@@ -1,4 +1,4 @@
-package com.example.whatstheweather
+package com.nirupamcodes.whatstheweather
 
 import android.content.Context
 import com.android.volley.Request

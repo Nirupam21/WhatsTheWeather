@@ -1,4 +1,4 @@
-package com.example.whatstheweather
+package com.nirupamcodes.whatstheweather
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,6 +12,7 @@ import com.android.volley.Response
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.RequestFuture
 import com.android.volley.toolbox.StringRequest
+import com.nirupamcodes.whatstheweather.R
 import org.json.JSONArray
 import java.text.DecimalFormat
 
